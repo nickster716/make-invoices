@@ -1,0 +1,300 @@
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+/* nav bar */
+.nav-bar{
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    width:100%;
+    height: 50px;
+    padding:10px;
+    display: flex;
+    align-items: center; 
+    
+    box-sizing: border-box;
+}
+    
+.list{
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+
+    display: flex;
+    gap: 40px;
+    font-size: 1.3em;
+}
+
+.list li>a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+/* button */
+
+button{
+    margin-right:150px;
+    margin-top: 10px;
+    float:right;
+    width:200px;
+    height:50px;
+    
+    border-radius: 1000px;
+    text-align: center;
+    border: 0.125rem solid #00B5E2;
+    font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.06rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 0.625rem 1.875rem;
+    background-color: #00B5E2;
+}
+
+button:hover{
+    background-color: #00B5E2; 
+}
+
+button>a{
+    text-decoration: none;
+    color:white;
+}
+/* container */
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    margin-top:70px;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:20px;
+}
+
+.part-one{
+    width:70%;
+    height:100vh;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.part-two{
+    width:26%;
+    height:73vh;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* part one that is main invoice part (left part) */
+p{
+    margin:0;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight:bold;
+    font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+}
+.billTo{
+    margin-left:15px;
+    width:91%;
+    height:50px;
+    font-size:23px;
+    padding:5px;
+    border: 0.3px solid black;
+    border-radius:5px;
+    outline: none; /* removes default focus outline */
+}
+.billTo:focus{
+    border: 3px solid #00B5E2;
+    border-radius:5px;
+}
+
+.three-Inputs{
+    height:50px;
+    font-size:23px;
+    padding:5px;
+    border: 0.3px solid black;
+    border-radius:5px;
+    outline: none;
+}
+.three-Inputs:focus{
+    border: 3px solid #00B5E2;
+    border-radius:5px;
+}
+
+.itemName{
+    width:40%;
+    margin-left:15px;
+}
+.Quantity{
+    width:23%;
+    margin-left:8px;
+}
+.Price{
+    width:23%;
+    margin-left:8px;
+}
+.Description{
+    margin-top:80px;
+    margin-left:15px;
+    width:91%;
+    height:130px;
+    border: 0.3px solid black;
+    border-radius:5px;
+    outline: none;
+    font-size:20px;
+    padding:5px;
+    resize: none; /* Disables the resize option  */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Description:focus{
+    border: 3px solid #00B5E2;
+    border-radius:5px;
+}
+
+.sellerNote{
+    margin-left:15px;
+    width:91%;
+    height:130px;
+    border: 0.3px solid black;
+    border-radius:5px;
+    outline: none;
+    font-size:20px;
+    padding:5px;
+    resize: none; /* Disables the resize option  */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.sellerNote:focus{
+    border: 3px solid #00B5E2;
+    border-radius:5px;
+}
+/* part two that is right invoice part (right part) */
+
+.billFrom, .invoiceDate ,.invoiceNumber{
+    margin-left:15px;
+    width:80%;
+    height:50px;
+    font-size:17px;
+    padding:5px;
+    border: 0.3px solid black;
+    border-radius:5px;
+    outline: none; /* removes default focus outline */
+}
+.billFrom:focus, .invoiceDate:focus, .invoiceNumber:focus{
+    border: 3px solid #00B5E2;
+    border-radius:5px;
+}
+
+.invoiceNumber{
+    margin-top:15px;
+}
+.invoiceDate{
+    margin-bottom: 25px; /* adding margin to bottom of invoice date to add some space  */
+}
+
+.subtotal, .total{
+    float: right;
+    margin-right: 35px;
+}
+.discount, .otherAmount{
+    margin-right: 35px;
+    width:45px;
+    height:15px;
+    float:right;
+    font-size:17px;
+    padding:5px;
+    border: 0.3px solid black;
+    border-radius:5px;
+    outline: none; /* removes default focus outline */
+}
+.discount:focus, .otherAmount:focus{
+    border: 3px solid #00B5E2;
+    border-radius:5px;
+    
+}
+
+
+/* footer section */
+
+.footer{
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    height:250px;
+    width:100%;
+    margin-top: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0; 
+
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li>a{
+    color: white;
+    text-decoration:none;
+}
+
+li>a:hover{
+    color:#686de0;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+}
+
+/* Hide the modal initially */
+.hidden {
+    display: none;
+}
+.modal-content p{
+    font-size: 25px;
+    color: black;
+}
+.modal-content {
+    background: antiquewhite;
+    
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content button {
+    margin-top: 10px;
+    margin-left:150px;
+    padding: 10px 20px;
+    border: none;
+    background: #00B5E2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: green;
+}

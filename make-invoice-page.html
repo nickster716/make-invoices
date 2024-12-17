@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Invoice</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./make-invoice-page.html">About Us</a></li>
+            <li><a href="./make-invoice-page.html">Create Invoice</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <button class="sendInvoice"><a href="#">Generate Invoice</a></button>
+    </div>
+
+    <div class="container">
+    
+        <div class="part-one">
+            <form action="" method="post">
+                <p>Bill to</p>
+                <input type="text" class="billTo" placeholder="Email address or name" required> <br>
+                <p>Items</p>
+                <input type="text" placeholder="Item name" class="itemName three-Inputs" required>
+                <input type="text" placeholder="Quantity" class="Quantity three-Inputs" value="1" required>
+                <input type="text" placeholder="Price" class="Price three-Inputs" required> <br>
+        
+                <textarea placeholder="Description" class="Description" required></textarea> <br>
+                <p>Message to Customer</p>
+                <textarea placeholder="Seller note to Customer" class="sellerNote" required></textarea> 
+
+            </form>
+        </div>
+
+        <div class="part-two">
+            <form action="" method="post">
+                <p >Bill from</p>
+                <input type="text" class="billFrom" placeholder="Freelancer's email address or name" required> <br>
+                <input type="text" class="invoiceNumber" placeholder="Invoice number" required> <br>
+                <p >Invoice date</p>
+                <input type="date" class="invoiceDate" required> <br>
+
+                <p class="righSideP">subtotal : <span class="subtotal" >0</span></p> 
+                <p class="righSideP">Discount : <input type="text" class="discount" value="0"></p>
+                <p class="righSideP">Other amount : <input type="text" class="otherAmount" value="0"></p>
+                <p class="righSideP">Total : <span class="total">0$</span></p>
+
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="">Mission</a></li>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Vision</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="">Custom Template</a></li>
+                    <li><a href="">Reminders</a></li>
+                    <li><a href="">Dedicated Support</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact Support</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Policies</h3>
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="">Email Us</a></li>
+                    <li><a href="">Call Us</a></li>
+                    <li><a href="">Locations</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+<div id="customAlert" class="modal hidden">  <!--made it position fixed and width and height 100% and top,left 0 so that it covers whole viewport starting from top left. inside thi is the actual modal. the actual modal is contered in screen using flex box. same justify content and align items center. -->
+    <div class="modal-content">
+        <p>Invoice sent</p>
+        <button id="okButton">OK</button>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>  <!--including pdf module. also important to use this before ./invoice.js otherwise invoice.js will show error when trying to const { jsPDF }= window.jspdf;-->
+    <script src="./invoice.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav bar */
+.nav-bar{
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    width:100%;
+    height: 50px;
+    padding:10px;
+    display: flex;
+    align-items: center; 
+    
+    box-sizing: border-box;
+}
+    
+.list{
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+
+    display: flex;
+    gap: 40px;
+    font-size: 1.3em;
+}
+
+.list li>a{
+    text-decoration: none;
+    color:white;
+    
+}
+
+/* nav bar */
+
+/* main image containing create invoice button */
+.pic1{
+    width:100%;
+    height:80vh;
+    background-color: yellow;
+    background: url("pic1.jpeg");
+    background-size: cover;
+}
+
+button{
+    margin-left:330px;
+    margin-top: 438px;
+
+    width:400px;
+    height:70px;
+    
+    border-radius: 1000px;
+    text-align: center;
+    border: 0.125rem solid #00B5E2;
+    font-family: PayPalOpen-Bold, "Helvetica Neue", Arial, sans-serif;
+    font-size: 2.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    padding: 0.625rem 1.875rem;
+    background-color: #00B5E2;
+
+    box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.8);
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the glow effect */
+}
+
+button:hover{
+    background-color: #00B5E2;
+    box-shadow: 0 0 20px 12px rgba(0, 255, 0, 0.8); 
+}
+
+button>a{
+    text-decoration: none;
+    color:white;
+}
+/* main image containing create invoice button */
+
+.why-choose-us-section{
+    margin-top:10px;
+    width:100%;
+    height:80vh;
+    background-color: #00B5E2;
+    
+}
+h1{
+    margin:0;
+    text-align: center;
+    font-size: 65px;
+    color:white;
+    padding:5px;
+}
+
+.choose-us-ul{
+    list-style-type: none;
+    
+    font-size: 34px;
+    color:white;
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:16px;
+    line-height: 3.2rem;
+    
+}
+.choose-us-ul li{
+    background-color: #092546;
+    width:1300px;
+    height:55px;
+    text-align: center;
+    border-radius: 1000px;
+    border: 0.125rem solid #092546;
+    line-height: 3.2rem;
+    
+}
+
+
+/* footer section */
+
+.footer{
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    height:250px;
+    width:100%;
+    margin-top: 10px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0; 
+
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li>a{
+    color: white;
+    text-decoration:none;
+    
+}
+
+li>a:hover{
+    color:#686de0;
+}
